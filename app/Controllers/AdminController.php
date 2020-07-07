@@ -16,6 +16,7 @@ namespace App\Controllers;
  */
 
 use CodeIgniter\Controller;
+use App\Libraries\Session;
 
 class AdminController extends Controller
 {
@@ -27,22 +28,37 @@ class AdminController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = [];
-
+	protected $helpers = ['url'];
+	protected $sess;
+	protected $data;
 	/**
 	 * Constructor.
 	 */
+
+	public function __construct()
+	{
+       	$c = new Session();
+        $this->sess = $c->isAdmin();
+	}
+
 	public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
 	{
+
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-
 
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
 		// E.g.:
-		// $this->session = \Config\Services::session();
+		$this->data['sess'] = $this->sess;
+
+		
+
+
+
 	}
+
+
 
 }

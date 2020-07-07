@@ -16,10 +16,10 @@ class Filters extends BaseConfig
 	public $globals = [
 		'before' => [
 			//'honeypot'
-			// 'csrf',
+			'csrf'  => ['except' => ['router/*']],
 		],
 		'after'  => [
-			'toolbar',
+			// 'toolbar',
 			//'honeypot'
 		],
 	];
