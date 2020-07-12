@@ -63,6 +63,7 @@ class ManageController extends Controller
 
 		try {
 			$this->mik	= new Client($config);
+			$this->data['mik'] = $this->mik;
 		} catch (\Exception $e) {
 			$this->sess_set->remove('router_id');
 			die(header('Location: '.base_url('router/data')));

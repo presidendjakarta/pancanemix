@@ -8,15 +8,48 @@
  * @subpackage Codeigniter Helper
  * @since Lahir
  */
-if (!function_exists('size_convert')) {
-	function size_convert($size,$sfx=TRUE){
-	  $base = log($size) / log(1024);
-	  $suffix = array("", "KB", "MB", "GB", "TB");
-	  $f_base = floor($base);
-	  $sf  = ($sfx==TRUE)?$suffix[$f_base]:'';
-	  return round(pow(1024, $base - floor($base)), 1) .$sf;
+if (!function_exists('size_convert_2')) {
+	function size_convert_2($size,$precision = 2){
+		$base = log($size, 1024);
+	    $suffixes = array('', 'KB', 'MB', 'GB', 'TB');   
+
+	    return round(pow(1024, $base - floor($base)), $precision) .' '. $suffixes[floor($base)];
 	}
 }
+if (!function_exists('size_convert')) {
+	function size_convert($size,$precision = 2){
+		$base = log($size, 1000);
+	    $suffixes = array('', 'Kb', 'Mb', 'Gb', 'Tb');   
+
+	    return round(pow(1000, $base - floor($base)), $precision) .' '. $suffixes[floor($base)];
+	}
+}
+
+if (!function_exists('array_print')) {
+	function array_print($array_data='')
+	{
+		return print("<pre>".print_r($array_data,true)."</pre>");
+	}
+}
+if (!function_exists('array_where')) {
+	function array_where($array_data='',$column='',$value='')
+	{
+		return  array_search($value, array_column($array_data, $column));
+	}
+}
+
+if (!function_exists('array_wheres')) {
+	function array_wheres($array_data='',$column='',$value='')
+	{
+		$new_key = array_search($value, array_column($array_data, $column));
+		if ($array_data[$new_key][$column]!=$value) {
+			return false;
+		}else{
+			return $array_data[$new_key];
+		}
+	}
+}
+
 
 
 if ( ! function_exists('anti_xss'))

@@ -13,6 +13,7 @@ class Ppp extends ManageController
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [
+			'custom/js/jquery.inputmask.bundle.js',
 			'custom/js/ip/data.js'
 		];
 		echo view('template/view_admin',$this->data);
@@ -22,6 +23,18 @@ class Ppp extends ManageController
 		$this->data['title']	= 'PPPoE Server';
 		$this->data['title2']	= 'PPP';
 		$this->data['page'] 	= 'ppp/pppoe_server';
+		$this->data['css']		= [
+		];
+		$this->data['js']		= [
+			'custom/js/ip/data.js'
+		];
+		echo view('template/view_admin',$this->data);
+	}
+	public function secret($value='')
+	{
+		$this->data['title']	= 'PPPoE Users';
+		$this->data['title2']	= 'PPP';
+		$this->data['page'] 	= 'ppp/pppoe_secret';
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [

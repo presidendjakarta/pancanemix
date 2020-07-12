@@ -26,6 +26,8 @@
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item"><a href="<?php echo base_url('ppp/profile') ?>" class="sidebar-link"><i class="mdi mdi-alert-outline"></i> <span class="hide-menu"> Profile </span></a></li>
                                 <li class="sidebar-item"><a href="<?php echo base_url('ppp/pppoe') ?>" class="sidebar-link"><i class="mdi mdi-alert-outline"></i> <span class="hide-menu"> PPPoe Server </span></a></li>
+                                
+                                <li class="sidebar-item"><a href="<?php echo base_url('ppp/secret') ?>" class="sidebar-link"><i class="mdi mdi-alert-outline"></i> <span class="hide-menu"> PPPoe Users </span></a></li>
                             </ul>
                         </li>
 
@@ -34,6 +36,11 @@
                             <i class="mdi mdi-dots-horizontal"></i>
                             <span class="hide-menu">Customer</span>
                         </li>
+
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="<?php echo base_url('customers/users') ?>" aria-expanded="false"><i class="mdi mdi-users"></i><span
+                                    class="hide-menu">Users</span></a></li>
 
                     <?php } ?>
 
