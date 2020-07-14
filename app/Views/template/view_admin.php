@@ -37,11 +37,11 @@
                             class="ti-menu ti-close"></i></a>
                     <a class="navbar-brand" href="index.html">
                         <b class="logo-icon">
-                            <img src="<?php echo base_url()?>/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img src="<?php echo base_url()?>/assets/images/logo-light-icon.png" alt="homepage" class="dark-logo" />
                             <img src="<?php echo base_url()?>/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                         </b>
                         <span class="logo-text">
-                            <img src="<?php echo base_url()?>/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <img src="<?php echo base_url()?>/assets/images/logo-light-text.png" alt="homepage" class="dark-logo" />
                             <img src="<?php echo base_url()?>/assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
                         </span>
                     </a>

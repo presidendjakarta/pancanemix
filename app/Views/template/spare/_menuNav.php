@@ -108,19 +108,19 @@
                                             </a>
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <span class="user-img position-relative d-inline-block"> <img src="<?php echo base_url()?>/assets/images/users/2.jpg" alt="user" class="rounded-circle w-100"> <span class="profile-status rounded-circle busy"></span> </span>
+                                                <span class="user-img position-relative d-inline-block"> <img src="<?php echo base_url()?>/assets/images/users/1.jpg" alt="user" class="rounded-circle w-100"> <span class="profile-status rounded-circle busy"></span> </span>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
                                                     <h5 class="message-title mb-0 mt-1">Sonu Nigam</h5> <span class="font-12 text-nowrap d-block text-muted text-truncate">I've sung a song! See you at</span> <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <span class="user-img position-relative d-inline-block"> <img src="<?php echo base_url()?>/assets/images/users/3.jpg" alt="user" class="rounded-circle w-100"> <span class="profile-status rounded-circle away"></span> </span>
+                                                <span class="user-img position-relative d-inline-block"> <img src="<?php echo base_url()?>/assets/images/users/1.jpg" alt="user" class="rounded-circle w-100"> <span class="profile-status rounded-circle away"></span> </span>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
                                                     <h5 class="message-title mb-0 mt-1">Arijit Sinh</h5> <span class="font-12 text-nowrap d-block text-muted text-truncate">I am a singer!</span> <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <span class="user-img position-relative d-inline-block"> <img src="<?php echo base_url()?>/assets/images/users/4.jpg" alt="user" class="rounded-circle w-100"> <span class="profile-status rounded-circle offline"></span> </span>
+                                                <span class="user-img position-relative d-inline-block"> <img src="<?php echo base_url()?>/assets/images/users/1.jpg" alt="user" class="rounded-circle w-100"> <span class="profile-status rounded-circle offline"></span> </span>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
                                                     <h5 class="message-title mb-0 mt-1">Pavan kumar</h5> <span class="font-12 text-nowrap d-block text-muted text-truncate">Just see the my admin!</span> <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span> </div>
                                             </a>
@@ -176,17 +176,5 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- ============================================================== -->
-                        <!-- Language -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href=""
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
-                                    class="flag-icon flag-icon-us"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right scale-up"> <a class="dropdown-item"
-                                    href="#"><i class="flag-icon flag-icon-in"></i> India</a> <a class="dropdown-item"
-                                    href="#"><i class="flag-icon flag-icon-fr"></i> French</a> <a class="dropdown-item"
-                                    href="#"><i class="flag-icon flag-icon-cn"></i> China</a> <a class="dropdown-item"
-                                    href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a> </div>
-                        </li>
+
                     </ul>
