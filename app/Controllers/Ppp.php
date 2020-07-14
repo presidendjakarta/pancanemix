@@ -16,6 +16,7 @@ class Ppp extends ManageController
 		];
 		$this->data['js']		= [
 			'custom/js/jquery.inputmask.bundle.js',
+			'custom/js/modal.js',
 			'custom/js/ip/data.js'
 		];
 		echo view('template/view_admin',$this->data);

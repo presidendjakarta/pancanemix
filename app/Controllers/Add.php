@@ -13,11 +13,20 @@ class Add extends ManageController
 
 	public function view_customer_category($value='')
 	{
+		$data = $this->mik->query('/ppp/profile/print')->read();
+		$keys = array_column($data, 'name');
+    	array_multisort($keys, SORT_ASC, $data);
+		$this->data['data'] = $data;
 		echo view('template/ajax/customers/add_category',$this->data);
 	}
 	public function view_customer($value='')
 	{
 		echo "hellow";
+	}
+
+	public function add_customer_category($value='')
+	{
+		# code...
 	}
 	public function add_ppp_profile()
 	{

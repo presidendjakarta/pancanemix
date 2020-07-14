@@ -1,3 +1,4 @@
+        $('.preloader').fadeOut();
 
     var forms = $('.router-add');
     var validation = Array.prototype.filter.call(forms, function(form) {

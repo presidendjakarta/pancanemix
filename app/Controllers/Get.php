@@ -2,6 +2,7 @@
 
 use CodeIgniter\API\ResponseTrait;
 use App\Models\Customers;
+use App\Models\Category;
 
 class Get extends ManageController
 {
@@ -73,7 +74,7 @@ class Get extends ManageController
 
 		
 		$cs = new Customers();
-		$data_cs = $cs->findAll();
+		$data_cs = $cs->where('router_id',$this->sess['router_id'])->findAll();
 
 		$this->data['data'] = $data_cs;
 		$this->data['data_q'] = $data_q;
@@ -87,8 +88,12 @@ class Get extends ManageController
 	{
 		$data = $this->mik->query('/ppp/profile/print')->read();
 		$keys = array_column($data, 'name');
+		$ct   = new Category();
+		// $data_ct = $ct->where('router_id',$this->sess['router_id'])->findAll();
     	array_multisort($keys, SORT_ASC, $data);
 		$this->data['data'] = $data;
+		$this->data['ct'] = $ct;
 		echo view('template/ajax/customers/category',$this->data);
+		echo get_js(['custom/js/modal.js']);
 	}
 }

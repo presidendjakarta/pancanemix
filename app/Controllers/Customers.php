@@ -14,6 +14,7 @@ class Customers extends ManageController
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [
+			'custom/js/modal.js',
 			'custom/js/ip/data.js'
 		];
 		echo view('template/view_admin',$this->data);
@@ -21,14 +22,15 @@ class Customers extends ManageController
 
 	public function category($value='')
 	{
-		$this->data['title']	= 'Category';
+		$this->data['title']	= 'Packaga';
 		$this->data['title2']	= 'Customers';
 		$this->data['page'] 	= 'pages';
-		$this->data['button_add'] = button_add('Add Category','Add Category','add/view_customer_category');
+		$this->data['button_add'] = button_add('Add Package','Add Package','add/view_customer_category');
 		$this->data['target']	= base_url('/get/customers_category');
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [
+			'custom/js/modal.js',
 			'custom/js/ip/data.js'
 		];
 		echo view('template/view_admin',$this->data);

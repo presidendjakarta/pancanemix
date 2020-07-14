@@ -14,14 +14,14 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                             <label for="local_address">Upload </label>
-                                            <input autocomplete="off" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="upload_speed" name="upload_speed" class="form-control" placeholder="192.168.0.1"> 
+                                            <input autocomplete="off" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="upload_speed" name="upload_speed" class="form-control" > 
                                             <small class="form-control-feedback"> In Megabit. </small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                             <label for="local_address">Download </label>
-                                            <input autocomplete="off" type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"id="download_speed" name="download_speed" class="form-control" placeholder="192.168.0.1"> 
+                                            <input autocomplete="off" type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"id="download_speed" name="download_speed" class="form-control" > 
                                             <small class="form-control-feedback"> In Megabit. </small>   
                                             </div>
                                              
@@ -30,7 +30,7 @@
                                    
 
 
-                                </form>
+                                <?php echo form_close() ?>
                             <script type="text/javascript">
                                 var ipv4_address = $('#local_address');
                                 ipv4_address.inputmask({
