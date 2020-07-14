@@ -1,13 +1,14 @@
-$('#data_address').load(base_url+'/get/address');
-$('#data_profile_ppp').load(base_url+'/get/ppp_profile');
-$('#data_pppoe_server').load(base_url+'/get/ppp_pppoe_server');
-$('#data_pppoe_secret').load(base_url+'/get/ppp_pppoe_secret');
-$('#data_customers_users').load(base_url+'/get/customers');
 
-
-
-
-
+$('.preloader').fadeIn();
+$.ajax({
+  url: $("#data-page").data('url'),
+  type: "GET",
+  dataType: "html",
+  success: function (res) {
+  	$('.preloader').fadeOut();
+    $("#data-page").html(res);
+  }
+});
 
 
 
@@ -63,10 +64,10 @@ $('#customModal .btn-action').click(function(e) {
         		$('.preloader').fadeIn();
         		$.ajax({
 				     type: "GET",
-				     url: base_url+'/get/ppp_profile?success=true',
+				     url: result.data.call,
 				     success: function(response){
            				$(".preloader").fadeOut();
-				        $('#data_profile_ppp').html(response);
+				        $('#data-page').html(response);
 				     }
 				});
         	}

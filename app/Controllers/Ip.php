@@ -9,7 +9,8 @@ class Ip extends ManageController
 	{
 		$this->data['title']	= 'Addresses';
 		$this->data['title2']	= 'IP';
-		$this->data['page'] 	= 'ip/addresses';
+		$this->data['page'] 	= 'pages';
+		$this->data['target']	= base_url('/get/address');
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [

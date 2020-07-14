@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="preloader">
+    <div class="preloader" style="background:rgba(0,0,0,0.7);">
         <div class="lds-ripple">
             <div class="lds-pos"></div>
             <div class="lds-pos"></div>
@@ -55,6 +55,7 @@
                 </div>
             </nav>
         </header>
+
         <aside class="left-sidebar">
              <?php 
                 if ($sess['akses']==='superman') {
@@ -80,6 +81,29 @@
             </footer>
         </div>
     </div>
+
+
+    <!-- /.start modal -->
+<div class="modal fade" id="customModal" tabindex="-1" role="dialog"
+    aria-labelledby="customModalx" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-info">
+                <h4 class="modal-title text-white" id="customModalx">{{title}}</h4>
+                <button type="button" class="close " data-dismiss="modal"
+                    aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                Wai t......
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info btn-action">{{btn-action}}}</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<!-- /.end modal -->
     <script type="text/javascript"> var base_url = '<?php echo base_url()?>'; </script>
     <script src="<?php echo base_url()?>/assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="<?php echo base_url()?>/assets/libs/popper.js/dist/umd/popper.min.js"></script>

@@ -82,4 +82,13 @@ class Get extends ManageController
 
 		echo view('template/ajax/customers/users',$this->data);
 	}
+
+	public function customers_category($value='')
+	{
+		$data = $this->mik->query('/ppp/profile/print')->read();
+		$keys = array_column($data, 'name');
+    	array_multisort($keys, SORT_ASC, $data);
+		$this->data['data'] = $data;
+		echo view('template/ajax/customers/category',$this->data);
+	}
 }

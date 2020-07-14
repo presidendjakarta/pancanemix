@@ -39,3 +39,4 @@ setInterval(function() {
 
 
 
+$(".preloader").fadeOut();

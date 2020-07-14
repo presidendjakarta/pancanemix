@@ -10,6 +10,15 @@ class Add extends ManageController
 	{
 		echo view('template/ajax/ppp/add_profile',$this->data);
 	}
+
+	public function view_customer_category($value='')
+	{
+		echo view('template/ajax/customers/add_category',$this->data);
+	}
+	public function view_customer($value='')
+	{
+		echo "hellow";
+	}
 	public function add_ppp_profile()
 	{
 		$name_profile = _clean($this->request->getPost('name_profile'));
@@ -111,6 +120,7 @@ class Add extends ManageController
     				'data'=>[
     					'msg'=>'success',
     					'err'=>'successfully added profile data.',
+    					'call'=>base_url('get/ppp_profile?success=true'),
     					'csrf_token'=>csrf_hash()
     				]
     			]);

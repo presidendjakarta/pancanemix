@@ -8,6 +8,12 @@
  * @subpackage Codeigniter Helper
  * @since Lahir
  */
+if (!function_exists('button_add')) {
+	function button_add($text='',$title='',$url='',$size='')
+	{
+		return " <a href=\"javascript:void(0)\" id=\"btn-add\" data-size='$size' data-button='Save' data-title='$title' data-url='".base_url($url)."' class=\"btn btn-info panca-mod\"><i class=\"fas fa-plus font-16 mr-1\"></i> $text</a>";
+	}
+}
 if (!function_exists('size_convert_2')) {
 	function size_convert_2($size,$precision = 2){
 		$base = log($size, 1024);

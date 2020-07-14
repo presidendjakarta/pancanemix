@@ -9,7 +9,9 @@ class Ppp extends ManageController
 	{
 		$this->data['title']	= 'Profile';
 		$this->data['title2']	= 'PPP';
-		$this->data['page'] 	= 'ppp/profile';
+		$this->data['page'] 	= 'pages';
+		$this->data['button_add'] = button_add('Add Profile','Add Profile','add/view_ppp_profile');
+		$this->data['target']	= base_url('/get/ppp_profile');
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [
@@ -22,7 +24,8 @@ class Ppp extends ManageController
 	{
 		$this->data['title']	= 'PPPoE Server';
 		$this->data['title2']	= 'PPP';
-		$this->data['page'] 	= 'ppp/pppoe_server';
+		$this->data['page'] 	= 'pages';
+		$this->data['target']	= base_url('/get/ppp_pppoe_server');
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [
@@ -34,7 +37,8 @@ class Ppp extends ManageController
 	{
 		$this->data['title']	= 'PPPoE Users';
 		$this->data['title2']	= 'PPP';
-		$this->data['page'] 	= 'ppp/pppoe_secret';
+		$this->data['page'] 	= 'pages';
+		$this->data['target']	= base_url('/get/ppp_pppoe_secret');
 		$this->data['css']		= [
 		];
 		$this->data['js']		= [
