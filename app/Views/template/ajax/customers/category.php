@@ -32,6 +32,7 @@
                         $no2 = 1;
                         $new = $ct->where(['router_id'=>$sess['router_id'],'profile_id'=>$value['.id']])->findAll();
                         foreach ($new as $result => $detail) { ?>
+                     <tr>
                          <td><?php echo $no2++ ?></td>
                          <td><?php echo $detail['name'] ?></td>
                          <td><?php echo $detail['upload'].'Mb/'.$detail['download'].'Mb' ?></td>
@@ -41,11 +42,7 @@
                                 <a href="javascript:void(0)" data-size="" data-button="Save" data-title="Add Category" data-url="http://pancanemix.test/add/view_customer_category"  class="text-info panca-mod"><i class="fas fa-edit "></i></a>
                             </div>
                          </td>
-
-
-
-
-
+                    </tr>
                         
                     <?php  } ?>
 

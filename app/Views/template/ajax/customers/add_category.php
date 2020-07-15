@@ -1,4 +1,4 @@
-<?php echo form_open('add/add_ppp_profile','class="form-material mt-2"') ?>
+<?php echo form_open('add/add_customer_category','class="form-material mt-2"') ?>
 	<div class="form-group ">
 		<label for="paket_name">Package Name </label>
 		<input type="text" id="paket_name" autocomplete="off" name="paket_name" class="form-control" placeholder="Paket Gelas 2Mbps"> 
