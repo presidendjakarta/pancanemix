@@ -29,6 +29,8 @@
             <div class="lds-pos"></div>
         </div>
     </div>
+    <input type="hidden" id="close" value="1">
+
     <div id="main-wrapper">
         <header class="topbar">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
